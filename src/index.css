@@ -1,62 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Quicksand:wght@300..700&display=swap');
 @import "tailwindcss";
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+
+:root {
+    --primary: #FFF5F8;
+    --foreground: oklch(0.35 0.05 340);
+    --primary-foreground: oklch(0.99 0 0);
+    --secondary: oklch(0.75 0.12 45);
+    --secondary-foreground: oklch(0.2 0.02 240);
+    --muted-foreground: oklch(0.45 0.05 340);
+    --button-hover: oklch(0.801 0.095 42.521);
+}
+
+html,
+body {
+    background-color: var(--primary);
     margin: 0;
     padding: 0;
 }
 
 @theme {
-    --font-sans: "Quicksand", ui-sans-serif, system-ui, sans-serif;
-    --font-serif: "Dancing Script", ui-serif, Georgia, serif;
-
-    --color-primary: #FFF5F8;
-    --color-foreground: oklch(0.35 0.05 340);
-    --color-primary-foreground: oklch(0.99 0 0);
-    --color-secondary: oklch(0.75 0.12 45);
-    --color-secondary-foreground: oklch(0.2 0.02 240);
-    --color-muted-foreground: oklch(0.45 0.05 340);
-    --color-button-hover: oklch(0.801 0.095 42.521);
-}
-
-:root {
-    font-size: 16px; /* No !important */
-}
-
-html {
-    scroll-behavior: smooth;
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-}
-
-html,
-body {
-    background-color: theme(colors.primary);
-    margin: 0;
-    padding: 0;
-    font-family: theme(fontFamily.sans), sans-serif;
-    width: 100%;
-    min-height: 100vh;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-#root {
-    width: 100%;
-    min-height: 100vh;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    --font-sans: "Quicksand", "Geist", "sans-serif";
+    --font-serif: "Dancing Script", "Playfair Display", "cursive";
+    --color-primary: var(--primary);
+    --color-foreground: var(--foreground);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-button-hover: var(--button-hover);
 }
