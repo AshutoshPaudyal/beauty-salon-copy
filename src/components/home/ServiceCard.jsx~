@@ -1,0 +1,63 @@
+import {Link} from "react-router-dom";
+import {
+    Card,
+    CardAction,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle
+} from "@/components/ui/card"
+
+
+export default function ServiceCard({service}) {
+    const services = [
+        {
+            id: 1,
+            img: "/src/assets/threading.png",
+            title: "Threading",
+            description: "Precision eyebrow shaping, upper lip, chin, full face, and more for perfectly defined features.",
+            price: "From $10"
+        },
+        {
+            id: 2,
+            title: "Waxing",
+            img: "/src/assets/waxing.png",
+            description: "Professional hair removal for silky smooth skin. Full body, Brazilian, bikini, and more options.",
+            price: "From $15"
+        },
+        {
+            id: 3,
+            title: "Facials",
+            img: "/src/assets/facial.png",
+            description: "Rejuvenating facials from basic to diamond luxury. Hydrating, anti-aging, and deep cleansing treatments.",
+            price: "From $20"
+        },
+        {
+            id: 4,
+            title: "Body Scrub",
+            img: "/src/assets/body-scrub.png",
+            description: "Luxurious exfoliating treatments for radiant skin. Full body, back scrubs, and detox packages available.",
+            price: "From $25"
+        },
+    ]
+
+    return (
+        <section className="grid max-w-[1650px] mx-auto
+                      gap-15 px-3 grid-cols-2 mt-30">
+            {services.map((service) => (
+                <Card className={"rounded-b-4xl pt-0 shadow-xl border-0 hover:shadow-2xl"} key={service.id}>
+                    <img src={service.img} alt={service.title} className="h-90 object-cover rounded-t-xl"/>
+                    <div className="flex flex-col gap-5 px-10 py-10">
+                        <h3 className={"text-5xl text-secondary font-bold font-serif"}>{service.title}</h3>
+                        <p className={"text-xl text-foreground"}>{service.description}</p>
+                        <div className={"flex items-center justify-between"}>
+                        <p className={"text-3xl text-secondary font-bold"}>{service.price}</p>
+                            <Link to= "/" className={"border rounded-4xl font-semibold px-6 py-3 text-lg bg-secondary text-primary-foreground hover:bg-button-hover transition-colors whitespace-nowrap"}>Book Now</Link>
+                        </div>
+                    </div>
+                </Card>
+            ))}
+        </section>
+    )
+}

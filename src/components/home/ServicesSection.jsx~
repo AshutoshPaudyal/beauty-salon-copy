@@ -1,0 +1,21 @@
+import ServiceCard from "./ServiceCard.jsx";
+import { Sparkles, Star } from "lucide-react"
+
+
+
+export default function ServicesSection() {
+    return (
+        <section className="mt-12 sm:mt-16 md:mt-20 lg:mt-30 px-3 pt-30 sm:px-4 bg-primary-foreground pb-25">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-7xl
+                     flex justify-center font-bold text-secondary">
+                Our Services
+            </h2>
+            <div className="flex items-center justify-center gap-3 mt-10">
+                <Sparkles className="h-8 w-8 text-secondary fill-secondary"/>
+                <Star className="h-8 w-8 text-secondary fill-secondary"/>
+                <Sparkles className="h-8 w-8 text-secondary fill-secondary"/>
+            </div>
+            <ServiceCard/>
+        </section>
+    );
+}

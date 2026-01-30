@@ -1,0 +1,31 @@
+import Header from "../components/home/Header.jsx";
+import HeroSection from "../components/home/HeroSection.jsx";
+import ServicesSection from "../components/home/ServicesSection.jsx";
+import Footer from "../components/home/Footer.jsx";
+import AboutUs from "../components/home/AboutUs.jsx";
+import ContactUs from "../components/home/ContactUs.jsx";
+
+export default function Home() {
+
+    const contacts = [
+        {icon: "/src/assets/phone.png", title: "Phone Number", value: "+977 9812345678"},
+        {icon: "/src/assets/email.png", title: "Email", value: "test123@gmail.com"},
+        {icon: "/src/assets/location.png", title: "Location", value: "Baluwakhani, Kapan"},
+        {icon: "/src/assets/clock.png", title: "Working Hours", value: "Mon–Sat (9:00 AM – 6:00 PM)"},
+    ];
+
+    return (
+        <>
+            <Header/>
+            <hr className="opacity-25"/>
+            <main className="pt-16 sm:pt-20 md:pt-28 lg:pt-55 bg-landing-background">
+                <HeroSection/>
+                <ServicesSection/>
+                <AboutUs/>
+            </main>
+            <ContactUs/>
+            <hr className="opacity-15"/>
+            <Footer/>
+        </>
+    )
+}

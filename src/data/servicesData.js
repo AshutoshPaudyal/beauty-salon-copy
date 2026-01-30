@@ -1,0 +1,58 @@
+export const categoriesData = [
+    {
+        id: 1,
+        title: "Threading",
+        slug: "threading",
+        description: "Precision eyebrow shaping, upper lip, chin, full face, and more for perfectly defined features using specialized cotton threading techniques.",
+        img: "/assets/threading.png",
+        basePrice: "10",
+        services: [
+            { id: 1, name: "Eyebrow Threading", duration: "15 min", price: "10", img: "/assets/eyebrow-threading.png" },
+            { id: 2, name: "Upper Lip Threading", duration: "10 min", price: "8", img: "/assets/upper-lip-threading.png" },
+            { id: 3, name: "Chin Threading", duration: "10 min", price: "8", img: "/assets/chin-threading.png" },
+            { id: 4, name: "Full Face Threading", duration: "30 min", price: "25", img: "/assets/full-face-threading.png" },
+            { id: 5, name: "Forehead Threading", duration: "10 min", price: "8", img: "/assets/forehead-threading.png" },
+            { id: 6, name: "Sides Threading", duration: "15 min", price: "10", img: "/assets/sides-threading.png" },
+        ]
+    },
+    {
+        id: 2,
+        title: "Waxing",
+        slug: "waxing",
+        description: "Professional hair removal for silky smooth skin. We offer a full range of waxing services including full body, Brazilian, bikini, and more.",
+        img: "/assets/waxing.png",
+        basePrice: "15",
+        services: [
+            { id: 1, name: "Full Body Wax", duration: "60 min", price: "50", img: null },
+            { id: 2, name: "Leg Waxing (Full)", duration: "45 min", price: "40", img: null },
+        ]
+    },
+    {
+        id: 3,
+        title: "Facials",
+        slug: "facials",
+        description: "Rejuvenating facials tailored to your skin type. From basic cleansing to diamond luxury treatments, we help your skin glow.",
+        img: "/assets/facial.png",
+        basePrice: "20",
+        services: [
+            { id: 1, name: "Basic Facial", duration: "45 min", price: "30", img: null },
+            { id: 2, name: "Diamond Facial", duration: "60 min", price: "60", img: null },
+        ]
+    },
+    {
+        id: 4,
+        title: "Body Scrubbing",
+        slug: "body-scrubbing",
+        description: "Luxurious exfoliating treatments for radiant and soft skin. Our full body scrubs and detox packages remove dead skin cells and improve circulation.",
+        img: "/assets/body-scrub.png",
+        basePrice: "25",
+        services: [
+            { id: 1, name: "Full Body Scrub", duration: "45 min", price: "40", img: null },
+        ]
+    }
+];
+
+// Helper to get category by slug
+export const getCategoryBySlug = (slug) => {
+    return categoriesData.find(cat => cat.slug === slug);
+};
