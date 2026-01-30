@@ -5,7 +5,6 @@ import { categoriesData, getCategoryBySlug } from "../data/servicesData";
 export const serviceData = categoriesData.reduce((acc, cat) => {
     acc[cat.slug] = {
         title: cat.title,
-        description: cat.description,
         services: cat.services.map(s => ({
             ...s,
             title: s.name,
@@ -33,14 +32,6 @@ export default function ServiceDetails() {
                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-muted-foreground mb-2 md:mb-4">
                     {currentCategory.title}
                 </h1>
-                {currentCategory.description && (
-                    <p className="text-muted-foreground text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl mx-auto mb-4 opacity-80 leading-relaxed font-light">
-                        {currentCategory.description}
-                    </p>
-                )}
-                <p className="text-muted-foreground text-xs sm:text-sm md:text-base lg:text-lg font-bold uppercase tracking-widest bg-pink-50 w-fit mx-auto px-4 py-1 rounded-full border border-pink-100 opacity-60">
-                    Detailed Services
-                </p>
             </div>
 
             {/* Grid of Services */}

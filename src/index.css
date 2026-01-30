@@ -10,9 +10,14 @@
     --secondary-foreground: oklch(0.2 0.02 240);
     --muted-foreground: oklch(0.45 0.05 340);
     --button-hover: oklch(0.801 0.095 42.521);
+    font-size: 16px;
 }
 
-html,
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
 body {
     background-color: var(--primary);
     margin: 0;

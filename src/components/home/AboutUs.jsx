@@ -11,7 +11,7 @@ export default function AboutUs() {
     return (
         <section
             className="flex flex-col items-center justify-center gap-4 sm:gap-5 md:gap-7 lg:gap-15 pb-10 sm:pb-16 lg:pb-20 px-3 sm:px-4 md:px-6 mt-6 sm:mt-10 lg:mt-20">
-            <h2 className="font-serif text-secondary text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-bold mt-6 sm:mt-8 md:mt-12 lg:mt-20 text-center">About
+            <h2 className="font-serif text-secondary text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold mt-6 sm:mt-8 md:mt-12 lg:mt-20 text-center">About
                 Us</h2>
             <div className={"flex flex-col lg:flex-row justify-center gap-10 lg:gap-15"}>
                 <article className={"flex flex-col gap-6 sm:gap-7"}>

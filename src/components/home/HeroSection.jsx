@@ -5,7 +5,7 @@ export default function HeroSection() {
         <>
             <section id="heroSection"
                 className="flex flex-col items-center justify-center gap-4 sm:gap-8 md:gap-10 lg:gap-10 px-4 sm:px-6 md:px-8">
-                <h2 className="text-secondary text-4xl sm:text-6xl md:text-8xl font-serif font-bold text-center leading-tight">
+                <h2 className="text-secondary text-4xl sm:text-6xl md:text-5xl lg:text-7xl font-serif font-bold text-center leading-tight">
                     it's time to <br />sparkle & shine</h2>
                 <p className="font-sans text-foreground text-lg sm:text-xl md:text-2xl lg:text-3xl text-center max-w-xl sm:max-w-2xl lg:max-w-none px-4">
                     Indulge in our luxurious beauty treatments
