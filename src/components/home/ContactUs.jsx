@@ -15,7 +15,7 @@ export default function ContactUs() {
         <section
             id="contact"
             className="relative flex flex-col items-center gap-7 bg-primary-foreground pt-6 sm:pt-10 md:pt-16 lg:pt-20 pb-16 sm:pb-24 md:pb-32 overflow-hidden">
-            <h2 className="text-3xl font-serif text-secondary sm:text-4xl md:text-5xl lg:text-7xl font-bold px-4 text-center">
+            <h2 className="text-3xl font-serif text-secondary sm:text-4xl md:text-5xl lg:text-6xl font-bold px-4 text-center">
                 Get In Touch With Us
             </h2>
             <div className="grid max-w-[1650px] mx-auto z-10 w-full
