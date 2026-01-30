@@ -10,26 +10,18 @@
     --secondary-foreground: oklch(0.2 0.02 240);
     --muted-foreground: oklch(0.45 0.05 340);
     --button-hover: oklch(0.801 0.095 42.521);
-
-    /* Force 16px base for rem units */
-    font-size: 16px !important;
-    -webkit-text-size-adjust: 100% !important;
-    text-size-adjust: 100% !important;
+    font-size: 16px;
 }
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px !important;
+    font-size: 16px;
 }
 
 body {
     background-color: var(--primary);
     margin: 0;
     padding: 0;
-    font-size: 1rem;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 @theme {

@@ -22,7 +22,7 @@ export default function Booking() {
             <div className="max-w-[1400px] mx-auto">
                 {/* Categories Section */}
                 <div className="text-center mb-6 md:mb-10">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-muted-foreground mb-2">
+                    <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-5xl font-bold text-muted-foreground mb-2">
                         Select Service Category
                     </h2>
                     <p className="text-muted-foreground text-base sm:text-lg md:text-xl">
@@ -48,16 +48,16 @@ export default function Booking() {
                             </div>
 
                             {/* Content Container */}
-                            <div className="p-5 sm:p-6 lg:p-8 flex justify-between items-center w-full">
+                            <div className="p-5 sm:p-6 lg:p-6 flex justify-between items-center w-full">
                                 <div className="text-left">
-                                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-muted-foreground mb-1 md:mb-2 text-wrap">
+                                    <h3 className="text-base sm:text-lg md:text-xl lg:text-xl font-medium text-muted-foreground mb-1 md:mb-2 text-wrap">
                                         {category.title}
                                     </h3>
-                                    <p className="text-muted-foreground text-sm sm:text-base md:text-lg lg:text-xl font-light">
+                                    <p className="text-muted-foreground text-sm sm:text-base md:text-lg lg:text-lg font-light">
                                         {category.count} options available
                                     </p>
                                 </div>
-                                <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-gray-300 group-hover:text-pink-300 transition-colors shrink-0" />
+                                <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-10 lg:h-10 text-gray-300 group-hover:text-pink-300 transition-colors shrink-0" />
                             </div>
                         </Link>
                     ))}

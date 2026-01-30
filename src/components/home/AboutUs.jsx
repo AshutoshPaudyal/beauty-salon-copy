@@ -10,18 +10,18 @@ const cardContents = [
 export default function AboutUs() {
     return (
         <section
-            className="flex flex-col items-center justify-center gap-4 sm:gap-5 md:gap-7 lg:gap-15 pb-10 sm:pb-16 lg:pb-20 px-3 sm:px-4 md:px-6 mt-6 sm:mt-10 lg:mt-20">
-            <h2 className="font-serif text-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-6 sm:mt-8 md:mt-12 lg:mt-20 text-center">About
+            className="flex flex-col items-center justify-center gap-4 sm:gap-5 md:gap-7 lg:gap-7 pb-10 sm:pb-16 lg:pb-20 px-3 sm:px-4 md:px-6 mt-6 sm:mt-10 lg:mt-20">
+            <h2 className="font-serif text-secondary text-3xl sm:text-4xl md:text-6xl lg:text-6xl font-bold mt-6 sm:mt-8 md:mt-12 lg:mt-12 text-center">About
                 Us</h2>
             <div className={"flex flex-col lg:flex-row justify-center gap-10 lg:gap-15"}>
                 <article className={"flex flex-col gap-6 sm:gap-7"}>
-                    <p className="text-sm sm:text-base md:text-lg text-left lg:text-2xl leading-relaxed lg:leading-relaxed text-center px-2 sm:px-0 max-w-4xl">
+                    <p className="text-sm sm:text-base md:text-lg text-left lg:text-lg leading-relaxed lg:leading-relaxed text-center px-2 sm:px-0 max-w-4xl">
                         At <span
                             className={"font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-secondary"}>Beauty Salon </span>, we
                         believe every woman deserves to feel beautiful and confident. Our
                         passion is bringing out your natural radiance through expert beauty treatments
                     </p>
-                    <p className="text-sm sm:text-base text-left md:text-lg lg:text-xl leading-relaxed lg:leading-relaxed text-muted-foreground text-pretty text-center px-2 sm:px-0 max-w-3xl">
+                    <p className="text-sm sm:text-base text-left md:text-lg lg:text-lg leading-relaxed lg:leading-relaxed text-muted-foreground text-pretty text-center px-2 sm:px-0 max-w-3xl">
                         With years of experience and a commitment to excellence, our skilled professionals use premium products and the latest techniques to deliver outstanding results every single visit.
                     </p>
                 </article>

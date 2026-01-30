@@ -22,10 +22,10 @@ export default function ServiceCard({ service }) {
 
     return (
         <section className="grid max-w-[1650px] mx-auto
-                      gap-6 sm:gap-8 md:gap-10 lg:gap-15 px-3 grid-cols-1 lg:grid-cols-2 mt-12 sm:mt-16 md:mt-24 lg:mt-30 pb-12 lg:pb-0">
+                      gap-6 sm:gap-8 md:gap-10 lg:gap-10 px-3 grid-cols-1 lg:grid-cols-2 mt-12 sm:mt-16 md:mt-24 lg:mt-24 pb-12 lg:pb-0">
             {services.map((service) => (
                 <Card className={"rounded-b-3xl sm:rounded-b-4xl pt-0 shadow-lg md:shadow-xl border-0 hover:shadow-xl md:hover:shadow-2xl transition-shadow"} key={service.id}>
-                    <div className="overflow-hidden rounded-t-3xl sm:rounded-t-4xl h-64 sm:h-72 md:h-80 lg:h-90">
+                    <div className="overflow-hidden rounded-t-3xl sm:rounded-t-4xl h-64 sm:h-72 md:h-80 lg:h-80">
                         <img
                             src={service.img}
                             alt={service.title}

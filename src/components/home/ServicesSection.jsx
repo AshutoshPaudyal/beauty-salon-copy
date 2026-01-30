@@ -5,8 +5,8 @@ import { Sparkles, Star } from "lucide-react"
 
 export default function ServicesSection() {
     return (
-        <section className="mt-6 sm:mt-12 md:mt-20 lg:mt-30 px-3 pt-10 sm:pt-16 md:pt-24 lg:pt-30 bg-primary-foreground pb-10 sm:pb-16 md:pb-24 lg:pb-30">
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl
+        <section className="mt-6 sm:mt-12 md:mt-20 lg:mt-20 px-3 pt-10 sm:pt-16 md:pt-24 lg:pt-24 bg-primary-foreground pb-10 sm:pb-16 md:pb-24 lg:pb-24">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-6xl
                      flex justify-center font-bold text-secondary text-center">
                 Our Services
             </h2>

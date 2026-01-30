@@ -29,7 +29,7 @@ export default function ServiceDetails() {
             </Link>
 
             <div className="max-w-4xl mx-auto text-center mb-8 md:mb-12">
-                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-muted-foreground mb-2 md:mb-4">
+                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-5xl font-bold text-muted-foreground mb-2 md:mb-4">
                     {currentCategory.title}
                 </h1>
             </div>
